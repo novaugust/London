@@ -429,8 +429,12 @@ body {
 .post-card-content {
     flex: 1 1 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* custom */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 3rem;
+    /* end */
     position: absolute;
     top: 0;
     right: 0;
@@ -440,6 +444,10 @@ body {
     background: rgba(0,0,0,0.1);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
+}
+
+.post-card-date {
+  font-size: 1.2rem;
 }
 
 .post-card.with-image .post-card-content {
@@ -461,7 +469,6 @@ body {
     display: inline-block;
     font-size: 3.4rem;
     max-width: 70%;
-    text-align: center;
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
 }
 
