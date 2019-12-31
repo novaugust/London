@@ -422,6 +422,10 @@ body {
     flex: 1 1 100%;
 }
 
+.featured.post-card-large {
+  height: 50vw;
+}
+
 .post-card-link {
     flex: 1 1 auto;
     display: block;
